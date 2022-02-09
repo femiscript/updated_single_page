@@ -1,0 +1,449 @@
+
+
+/* CSS Variables */
+/* var --light #000000; */
+
+/* Pseudo Elements */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Body Styling */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--light);
+}
+
+.nav-bar{
+    background-color: #cc174d;
+}
+
+/* NAV Styling */
+nav{
+    display: flex;
+}
+
+.nav-toggle{
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 15px;
+}
+
+.nav-toggle-btn{
+    background-color: #dfdbdb;
+    padding: 1.5px 15px;
+    margin: 2px 0;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+    padding: 15px;
+}
+
+li:nth-child(1){
+    margin-left: 45px;
+}
+
+li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.8em;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+li:hover{
+    cursor: pointer;
+    background-color: #990d37;
+}
+
+.nav-btn{
+    margin-left: auto;
+    padding: 10px;
+}
+
+button{
+    padding: 7px;
+    text-transform: uppercase;
+    border: 1px solid #000000;
+    background-color: transparent;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin: auto 5px;
+    transition: all 0.2s;
+}
+
+.nav-btn button
+{
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.banner-box button{
+    border: 1px solid #cc174d;
+    color: #ffffff;
+}
+
+button:hover{
+    border: 1px solid #990d37;
+    color: #dfdbdb;
+}
+
+/* .....  Banner..... */
+.banner-box{
+    display: flex;
+    height: 70vh;
+    text-align: center;
+    background-image: linear-gradient(#000000, #000000a6), url(./img/martin-sanchez-G78c3DPmD_A-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: #cc174d;
+    font-size: 3em;
+    font-weight: 900;
+}
+
+h1 span{
+    color: #ffffff;
+}
+h1 + p{
+    color: #ffffff;
+    line-height: 30px;
+    font-size: 1em;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    padding: 15px 100px;
+}
+
+.about-box,
+.project-heading,
+.card-heading
+{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.about-box h3,
+.project-heading h3,
+.card-heading h3,
+.testimony-heading h3
+{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.about-text p{
+    padding: 20px 10px;
+    font-size: 1.2;
+    line-height: 25px;
+}
+
+.about-text button{
+    font-weight: bold;
+}
+
+.about-text button:hover{
+    border: 1px solid #cc174d;
+    color: #cc174d;
+}
+
+.project-box{
+    padding: 20px 100px;
+}
+.project{
+     display: grid;
+     grid-gap: 20px;
+     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.project div{
+    padding: 50px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.project div:hover{
+    -moz-box-shadow: 0 0 5px 0 #888888;
+    -ms-box-shadow: 0 0 5px 0 #888888;
+    -webkit-box-shadow: 0 0 5px 0 #888888;
+    -o-box-shadow: 0 0 5px 0 #888888;
+    box-shadow: 0 0 5px 0 #888888;
+}
+
+.project div:nth-child(1){
+    background-image: url("./img/emile-perron-xrVDYZRGdw4-unsplash.jpg");
+}
+
+.project div:nth-child(2){
+    background-image: url("./img/frankie-lg35FkimT30-unsplash.jpg");   
+}
+
+.project div:nth-child(3){
+    background-image: url("./img/lee-campbell-DtDlVpy-vvQ-unsplash.jpg");
+}
+
+.project div:nth-child(4){
+    background-image: url("./img/tyler-nix-7ukf-r-Oh-k-unsplash.jpg");
+}
+
+.project div:nth-child(5){
+    background-image: url("./img/mohammad-rahmani-LrxSl4ZxoRs-unsplash.jpg");
+}
+
+.project div:nth-child(6){
+    background-image: url("./img/clement-helardot-95YRwf6CNw8-unsplash.jpg");
+}
+
+.project div:nth-child(7){
+    background-image: url("./img/mohammad-rahmani-jTTDXiNveOs-unsplash.jpg");
+}
+
+.project div:nth-child(8){
+    background-image: url("./img/neonbrand-4kjcmPhsGkc-unsplash.jpg");
+}
+
+.card-container{
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.card-box
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-cover{
+    padding: 10px;
+}
+
+.card-box{
+    padding: 20px 22px;
+    border: 2px solid #eeecec;
+    border-radius: 5px;
+    -moz-box-shadow: 0 0 5px 0 #c2c1c1;
+    -ms-box-shadow: 0 0 5px 0 #c2c1c1;
+    -webkit-box-shadow: 0 0 5px 0 #c2c1c1;
+    -o-box-shadow: 0 0 5px 0 #c2c1c1;
+    box-shadow: 0 0 5px 0 #c2c1c1;
+}
+
+.card-box .card-img{
+    padding: 60px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    transition: ease-in-out 0.8s;
+    -moz-box-shadow: 0 0 5px 0 #888888;
+    -ms-box-shadow: 0 0 5px 0 #888888;
+    -webkit-box-shadow: 0 0 5px 0 #888888;
+    -o-box-shadow: 0 0 5px 0 #888888;
+    box-shadow: 0 0 5px 0 #888888;
+}
+
+.card-box .card-img.one{
+    background-image: url("./img/me_vneck.jpg");
+}
+.card-box .card-img.two{
+    background-image: url("./img/me_red.jfif");
+}
+.card-box .card-img.three{
+    background-image: url("./img/me_vneck.jpg");
+}
+.card-box .card-img.four{
+    background-image: url("./img/me_red.jfif");
+}
+.card-box .card-img.five{
+    background-image: url("./img/me_vneck.jpg");
+}
+.card-box .card-img.six{
+    background-image: url("./img/me_red.jfif");
+}
+
+.card-box .card-img:hover{
+    transform: scale(1.1);
+}
+
+.card-box p{
+    font-weight: bold;
+    padding: 15px;
+    font-size: 1.1em;
+}
+
+.card-box ul{
+    display: block;
+}
+.card-box ul li{
+    padding: 5px;
+    list-style: none;
+}
+.card-box ul li:hover{
+    background-color: transparent;
+}
+
+.testimony-box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimony-box .testimony-heading{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-bottom: 2px;
+}
+
+.testimony-img img{
+    height: 50px;
+    width: 50px;
+    margin-top: 20px;
+}
+
+.testimony-text p{
+    text-align: center;;
+    padding: 20px 10px;
+    font-size: 1.2;
+    line-height: 25px;
+}
+
+.testimony-text .testimony{
+    padding: 30px 130px;
+    font-size: 15px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #696969;
+}
+
+/* .....FOOTER..... */
+
+.footer-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    background-color: #111111;
+}
+
+.footer-box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+    /* border: 2px solid #888888; */
+    padding: 10px 15px;
+}
+
+.footer-box a{
+    text-decoration: none;
+    color: #888888;
+    padding: 10px;
+    text-align: left;
+    font-size: 0.8em;
+}
+
+.footer-box a:hover{
+    text-decoration: underline;
+}
+
+.four{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 60px;
+}
+
+.four .social-icon{
+    padding: 17px;
+    background-color: #bdbdbd;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.four .social-icon:hover{
+    cursor: pointer;
+    background-color: #7c7c7c;
+}
+
+
+.footer-bottom{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    text-align: center;
+    background-color: #000000;
+    color: #dfdbdb;
+}
+
+.footer-bottom .footer-search{
+    padding: 25px;
+}
+
+.footer-search input{
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    width: 300px;
+    padding: 5px 20px;
+    background-color: #f5f0f01a;
+    color: #dfdbdb;
+}
+
+.footer-bottom p{
+    color: #696969;
+}
+
+.line{
+    padding: 1px 30px;
+    background-color: #bdbdbd;
+}
